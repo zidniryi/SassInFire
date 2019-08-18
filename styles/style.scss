@@ -1,15 +1,6 @@
-$primaryBtn : #3498d0;
-$hColor: grey;
-header{
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    color: $hColor;
-    button{
-        background-color: $primaryBtn;
-      }      
-}
 
+@import './variables';
+@import './header';
 
 .contact button {
   background-color: $primaryBtn;

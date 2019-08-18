@@ -6,11 +6,23 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: grey;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  color: blue;
 }
 
 header button {
   background-color: #3498d0;
+}
+
+header button:hover {
+  background-color: red;
+}
+
+header button::after {
+  content: "Hello";
 }
 
 .contact button {

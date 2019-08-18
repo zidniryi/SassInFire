@@ -1,0 +1,17 @@
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: $hColor;
+    button{
+        background-color: $primaryBtn;
+       &:hover{
+           background-color: red;
+       }
+       &::after{
+           content: "Hello";
+       }
+      }      
+}
