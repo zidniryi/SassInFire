@@ -1,3 +1,16 @@
+$primaryBtn : #3498d0;
+$hColor: grey;
 header{
-    background-color: aqua
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    color: $hColor;
+    button{
+        background-color: $primaryBtn;
+      }      
+}
+
+
+.contact button {
+  background-color: $primaryBtn;
 }
