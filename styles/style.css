@@ -1,4 +1,4 @@
-header {
+header, .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,37 +12,26 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: aqua;
+  background: red;
   height: 100vh;
   color: blue;
 }
 
-header button {
+header button, .contact button {
   background-color: #3498d0;
 }
 
-header button:hover {
+header button:hover, .contact button:hover {
   background-color: red;
 }
 
-header button::after {
+header button::after, .contact button::after {
   content: "Hello";
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  background-color: burlywood;
+  width: 80%;
 }
 
 .contact button {

@@ -3,7 +3,10 @@
 @import './header';
 
 .contact{
-  @include flexCenter(row);
+//   @include flexCenter(row, green);
+@extend header;
+background-color: burlywood;
+width: 100% - 20%;
 }
 .contact button {
   background-color: $primaryBtn;
