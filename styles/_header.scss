@@ -1,8 +1,12 @@
-header{
-    background-color: aqua;
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+header{
+    // For function
+    @include flexCenter();
+    background-color: aqua;
     height: 100vh;
     color: $hColor;
     button{
