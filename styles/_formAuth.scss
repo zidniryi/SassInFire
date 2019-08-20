@@ -1,14 +1,16 @@
 @import './loginVariable';
+@mixin h2Fire() {
+    font-family: $fontFamily;
+    font-variant: small-caps;
+    font-size: $fireH2;
+    font-weight: 300;  
+}
 .form-container {
     box-shadow: 0 25px 100px -35px $fireBlack;
     border-radius: 10px;
     width: 300px;
     h2{
-      font-family: 'Prata', serif;
-      text-transform: uppercase; 
-      font-variant: small-caps;
-      font-size: $fireH2;
-      font-weight: 300; 
+      @include h2Fire() 
     }
     .active-form {
         animation-fill-mode: forwards;
@@ -62,9 +64,6 @@
         cursor: text;
       }
       h2 {
-        font-family: $fontFamily;
-        font-variant: small-caps;
-        font-size: $fireH2;
-        font-weight: 300;
+      @include h2Fire()
       } 
 }  
