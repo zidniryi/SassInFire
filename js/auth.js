@@ -1,4 +1,4 @@
-function swapSignForms(bool) {
+function swipeAuth(bool) {
     if (bool) {
        document.querySelector('#register-container').classList.add('inactive-form');
 		 document.querySelector('#register-container').classList.remove('active-form');
@@ -24,10 +24,10 @@ var loginTransition = document.querySelector('#login-transition');
 var registerTransition = document.querySelector('#register-transition');
 
 loginTransition.addEventListener('click', function(){
-	swapSignForms(true);
+	swipeAuth(true);
 });
 registerTransition.addEventListener('click', function(){
-	swapSignForms(false);
+	swipeAuth(false);
 });
 
-swapSignForms(true);
+swipeAuth(true);
