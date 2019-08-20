@@ -1,0 +1,70 @@
+@import './loginVariable';
+.form-container {
+    box-shadow: 0 25px 100px -35px $fireBlack;
+    border-radius: 10px;
+    width: 300px;
+    h2{
+      font-family: 'Prata', serif;
+      text-transform: uppercase; 
+      font-variant: small-caps;
+      font-size: $fireH2;
+      font-weight: 300; 
+    }
+    .active-form {
+        animation-fill-mode: forwards;
+        animation: show-form 300ms 1 cubic-bezier(0.64, 0.31, 0.16, 0.85);
+      } 
+    .register-form, .login-form {
+        padding: 25px;
+        display: block;
+      }
+      .title {
+        margin: 10px 10px 0 10px;
+      }
+      
+      .text {
+        font-size: 0.8em;
+        margin: 0 10px;
+      }
+      .username, .email, .password {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        padding: 15px 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: $fireWhite;
+        color: $fireBlack;
+        font-family: $fontFamily;
+        box-shadow: 0 10px 15px -15px $fireBlack;
+        transition: padding 200ms ease;
+        cursor: text;
+      }
+  }
+
+  .inactive-form {
+    animation-fill-mode: forwards;
+    animation: hide-form 300ms 1 cubic-bezier(0.64, 0.31, 0.16, 0.85);
+    .username, .email, .password {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        padding: 15px 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: $fireWhite;
+        color: $fireBlack;
+        font-family: $fontFamily;
+        box-shadow: 0 10px 15px -15px $fireBlack;
+        transition: padding 200ms ease;
+        cursor: text;
+      }
+      h2 {
+        font-family: $fontFamily;
+        font-variant: small-caps;
+        font-size: $fireH2;
+        font-weight: 300;
+      } 
+}  

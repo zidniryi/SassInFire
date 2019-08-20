@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Libre+Caslon+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap");
+.form-container {
+  -webkit-box-shadow: 0 25px 100px -35px #303841;
+          box-shadow: 0 25px 100px -35px #303841;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.form-container h2 {
+  font-family: 'Prata', serif;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.form-container .active-form {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation: show-form 300ms 1 cubic-bezier(0.64, 0.31, 0.16, 0.85);
+          animation: show-form 300ms 1 cubic-bezier(0.64, 0.31, 0.16, 0.85);
+}
+
+.form-container .register-form, .form-container .login-form {
+  padding: 25px;
+  display: block;
+}
+
+.form-container .title {
+  margin: 10px 10px 0 10px;
+}
+
+.form-container .text {
+  font-size: 0.8em;
+  margin: 0 10px;
+}
+
+.form-container .username, .form-container .email, .form-container .password {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  color: #303841;
+  font-family: "Lexend Deca", sans-serif;
+  -webkit-box-shadow: 0 10px 15px -15px #303841;
+          box-shadow: 0 10px 15px -15px #303841;
+  -webkit-transition: padding 200ms ease;
+  transition: padding 200ms ease;
+  cursor: text;
+}
+
+.inactive-form {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation: hide-form 300ms 1 cubic-bezier(0.64, 0.31, 0.16, 0.85);
+          animation: hide-form 300ms 1 cubic-bezier(0.64, 0.31, 0.16, 0.85);
+}
+
+.inactive-form .username, .inactive-form .email, .inactive-form .password {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  color: #303841;
+  font-family: "Lexend Deca", sans-serif;
+  -webkit-box-shadow: 0 10px 15px -15px #303841;
+          box-shadow: 0 10px 15px -15px #303841;
+  -webkit-transition: padding 200ms ease;
+  transition: padding 200ms ease;
+  cursor: text;
+}
+
+.inactive-form h2 {
+  font-family: "Lexend Deca", sans-serif;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+#login-transition, #register-transition {
+  display: inline-block;
+  font-size: 0.7em;
+  margin: 0 10px;
+  text-align: center;
+}
+
+#login-transition a, #register-transition a {
+  font-weight: bold;
+  color: #303841;
+}
+
+@-webkit-keyframes hide-form {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes hide-form {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes show-form {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes show-form {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #eeeeee;
+  color: #303841;
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+button {
+  margin: 15px 0;
+  padding: 10px 15px;
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: #d63031;
+  color: #eeeeee;
+  -webkit-box-shadow: 0 10px 25px -10px #d63031;
+          box-shadow: 0 10px 25px -10px #d63031;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 12px 25px -10px #d63031;
+          box-shadow: 0 12px 25px -10px #d63031;
+}
+/*# sourceMappingURL=login.css.map */

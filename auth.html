@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/login.css">
 </head>
 <body>
   <div class="form-container">
-  <div class="active-form" id="signin-container">
-    <form class="signin-form">
-      <h2 class="title">Register</h2>
+  <div class="active-form" id="login-container">
+    <form class="login-form">
+      <h2 class="title">Login</h2>
       <p class="text">Hello back!</p>
       <input class="email" type="email" placeholder="Email"/>
       <input class="password" type="password" placeholder="Password"/>
-      <button type="submit">Login</button><span id="signup-transition">Not register yet ? <a href="#">Register</a></span>
+      <button type="submit">Login</button><span id="register-transition">Not register yet ? <a href="#">Register</a></span>
     </form>
   </div>
-  <div class="inactive-form" id="signup-container">
-    <form class="signup-form">
+  <div class="inactive-form" id="register-container">
+    <form class="register-form">
       <h2 class="title">Register</h2>
       <p class="text">Register</p>
       <input class="username" type="text" placeholder="Username"/>
       <input class="email" type="email" placeholder="Email"/>
       <input class="password" type="password" placeholder="Password"/>
-      <button type="submit">Register</button><span id="signin-transition">Already Register ? <a href="#">Login</a></span>
+      <button type="submit">Register</button><span id="login-transition">Already Register ? <a href="#">Login</a></span>
     </form>
   </div>
 </div>  
+<script src="./js/auth.js"></script>
 </body>
 </html>

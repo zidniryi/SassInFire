@@ -1,0 +1,45 @@
+@import './loginVariable';
+@import './formAuth';
+@import './animationAuth';
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Libre+Caslon+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap");
+
+
+body {
+    font-family: $fontFamily;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $fireWhite;
+    color: $fireBlack;
+    margin: 0;
+  }
+.clear {
+    clear: both;
+  }
+
+button {
+    margin: 15px 0;
+    padding: 10px 15px;
+    width: 100%;
+    font-family: $fontFamily;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: $fireColor;
+    color: $fireWhite;
+    box-shadow: 0 10px 25px -10px $fireColor;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 200ms ease;
+    &:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px -10px $fireColor;
+    }
+
+  }
+
+
+
+  
